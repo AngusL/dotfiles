@@ -1,6 +1,9 @@
 PROMPT_COMMAND='if [ ${#PWD} -gt 25 ]; then SHORT_PWD=${PWD:0:11}...${PWD:${#PWD}-11}; else SHORT_PWD=$PWD; fi'
 export PS1='\H:$SHORT_PWD> '
 
+# Command history - don't recall duplicates
+export HISTIGNORE="&"
+
 # Personal applications
 export PATH="$HOME/bin/script:$HOME/bin:$PATH"
 export MANPATH="$HOME/share/man:$HOME/man:$MANPATH"
