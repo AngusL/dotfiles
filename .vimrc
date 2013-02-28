@@ -16,6 +16,7 @@ set mouse=a
 set backspace=indent,eol,start
 
 set showtabline=2
+set nohlsearch
 
 au! BufWritePost * mkview
 au! BufReadPost  * silent loadview
