@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+cd `git exec pwd`
+ctags --tag-relative=yes -R -f .tags

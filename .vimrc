@@ -21,6 +21,9 @@ set nohlsearch
 au! BufWritePost * mkview
 au! BufReadPost  * silent loadview
 
+set autochdir
+set tags+=.tags;
+
 filetype plugin on
 filetype plugin indent on
 

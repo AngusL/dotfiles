@@ -1,0 +1,9 @@
+[user]
+	name = Angus Lepper
+	email = angus.lepper@cantab.net
+[merge]
+	tool = vimdiff
+[alias]
+	exec = "!exec "
+[init]
+	templatedir = ~/.git_template
