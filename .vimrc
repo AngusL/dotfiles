@@ -51,6 +51,27 @@ function! ToggleHexView()
     endif
 endfunction
 
+nnoremap <F11> :call ToggleBookView()<CR>
+let $book_view = 0
+function! ToggleBookView()
+    if $book_view == 0
+        let top = line("w$")
+        vsplit
+
+        execute ":" . top
+        normal zt
+
+        windo setlocal scrollbind
+        let $book_view = 1
+    else
+        q
+        setlocal noscrollbind
+        let $book_view = 0
+    end
+endfunction
+
+set ttymouse=xterm2
+
 if match($TERMCAP, 'Co#256:') == 0 || match($TERMCAP, ':Co#256:') > 0
     set t_Co=256
 endif
