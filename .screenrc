@@ -1,12 +1,5 @@
 # Make sure .bashrc, .bash_profile work correctly
-term xterm
 shell -$SHELL
-
-# 256 color support
-attrcolor b ".I"                                             # Colour bold
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'     # Colour how? (1)
-terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' # Colour how? (2)
-defbce on                                                    # Erasure=BG colour
 
 altscreen on                # Don't leave e.g. text from vim on screen afterward
 termcapinfo xterm* ti       # Use native scrollback
