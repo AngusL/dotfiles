@@ -1,4 +1,5 @@
 # Make sure .bashrc, .bash_profile work correctly
+term screen-256color
 shell -$SHELL
 
 altscreen on                # Don't leave e.g. text from vim on screen afterward
