@@ -14,12 +14,6 @@ export LD_LIBRARY_PATH="$HOME/lib:$LD_LIBRARY_PATH"
 # Colours
 eval `dircolors ~/.dir_colors`
 
-case $TERM in
-    xterm)  [ -e /usr/share/terminfo/x/xterm-256color ] && export TERM='xterm-256color' ;;
-    screen) [ -e /usr/share/terminfo/x/screen-256color ] && export TERM='screen-256color'
-            [ ! -z "$TERMCAP" ] && export TERMCAP=$(echo $TERMCAP | sed -e 's/Co#8/Co#256/g') ;;
-esac
-
 # Forward X11 if we can, but aren't
 if [ -z $DISPLAY ]; then
     export DISPLAY=`remote_x_servers | tail -n 1`
