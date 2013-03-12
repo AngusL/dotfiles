@@ -71,7 +71,3 @@ function! ToggleBookView()
 endfunction
 
 set ttymouse=xterm2
-
-if match($TERMCAP, 'Co#256:') == 0 || match($TERMCAP, ':Co#256:') > 0
-    set t_Co=256
-endif
