@@ -16,6 +16,9 @@ set mouse=a
 set backspace=indent,eol,start
 
 set showtabline=2
+set splitright
+set splitbelow
+
 set nohlsearch
 
 au! BufWritePost * mkview
