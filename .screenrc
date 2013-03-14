@@ -6,8 +6,7 @@ altscreen on                # Don't leave e.g. text from vim on screen afterward
 termcapinfo xterm* ti       # Use native scrollback
 vbell off                   # Visual bell is annoying
 
-# Keep better history
-defscrollback 5000
+defscrollback 5000          # Keep better history
 
 # Look and feel
 caption    always         "%t [%n]"

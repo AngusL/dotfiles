@@ -44,13 +44,13 @@ function! ToggleHexView()
     setlocal binary
     setlocal noeol
     if $hex_view == 0
-        :%!xxd
-        setlocal syntax=xxd
-        let $hex_view = 1
+	:%!xxd
+	setlocal syntax=xxd
+	let $hex_view = 1
     else
-        :%!xxd -r
-        setlocal syntax=
-        let $hex_view = 0
+	:%!xxd -r
+	setlocal syntax=
+	let $hex_view = 0
     endif
 endfunction
 
@@ -58,18 +58,18 @@ nnoremap <F11> :call ToggleBookView()<CR>
 let $book_view = 0
 function! ToggleBookView()
     if $book_view == 0
-        let top = line("w$")
-        vsplit
+	let top = line("w$")
+	vsplit
 
-        execute ":" . top
-        normal zt
+	execute ":" . top
+	normal zt
 
-        windo setlocal scrollbind
-        let $book_view = 1
+	windo setlocal scrollbind
+	let $book_view = 1
     else
-        q
-        setlocal noscrollbind
-        let $book_view = 0
+	q
+	setlocal noscrollbind
+	let $book_view = 0
     end
 endfunction
 
