@@ -33,7 +33,10 @@ filetype plugin indent on
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-vnoremap / <ESC>/\%V
+nnoremap / /\v
+vnoremap / <ESC>/\%V\v
+
+cnoremap s/ s/\v
 
 nnoremap <F2> Nzz
 nnoremap <F3> nzz
