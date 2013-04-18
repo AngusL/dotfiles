@@ -5,7 +5,7 @@
 	tool = vimdiff
 [alias]
 	exec = "!exec "
-	slog = "!git log --pretty=format:'%h%ad%an%s' --date=iso | column -t -s '' | less"
+	slog = "!git log --pretty=tformat:'%h%ad%an%s' --date=iso | column -t -s '' | less -FX"
 [init]
 	templatedir = ~/.git_template
 [diff]
