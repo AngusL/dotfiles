@@ -1,3 +1,9 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
+set viewdir=~/.vim.d/view
+let g:netrw_home=expand("$HOME/.vim.d")
+
 set tabstop=8
 set shiftwidth=4
 set softtabstop=4
