@@ -1,8 +1,13 @@
 PROMPT_COMMAND='if [ ${#PWD} -gt 25 ]; then SHORT_PWD=${PWD:0:11}...${PWD:${#PWD}-11}; else SHORT_PWD=$PWD; fi'
 export PS1='\H:$SHORT_PWD> '
 
-# Command history - don't recall duplicates
-export HISTIGNORE="&"
+# Don't store or recall duplicate or short/unhelpful commands in history
+HISTCONTROL="ignoredups:erasedups"
+HISTIGNORE="?:??:???:exit:clear:history:git diff:git branch"
+
+# Aggregate & propagate command history across all shells
+shopt -s histappend
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # Personal applications
 export PATH="$HOME/bin/script:$HOME/bin:$PATH"
