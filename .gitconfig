@@ -12,3 +12,5 @@
 	algorithm = patience
 [color]
 	ui = on
+[push]
+	default = upstream
