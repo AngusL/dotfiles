@@ -16,6 +16,8 @@ export PKG_CONFIG_PATH="$HOME/lib/pkgconfig:$PKG_CONFIG_PATH"
 export INCLUDE="$HOME/include:$INCLUDE"
 export LD_LIBRARY_PATH="$HOME/lib:$LD_LIBRARY_PATH"
 
+export EDITOR=vim
+
 # Colours
 eval `dircolors ~/.dir_colors`
 
