@@ -2,6 +2,8 @@
 term screen-256color
 shell -$SHELL
 
+startup_message off
+
 altscreen on                # Don't leave e.g. text from vim on screen afterward
 termcapinfo xterm* ti       # Use native scrollback
 vbell off                   # Visual bell is annoying
