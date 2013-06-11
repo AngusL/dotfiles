@@ -35,6 +35,7 @@ alias ls='ls --color=auto'
 alias ll='ls --color=auto -ltrh'
 alias la='ls --color=auto -a'
 alias ssh='ssh -X'
+alias tclsh='rlwrap tclsh'
 
 # Progress-reporting copy command
 function copy() {
