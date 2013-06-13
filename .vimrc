@@ -66,6 +66,8 @@ function! ToggleHexView()
     endif
 endfunction
 
+set pastetoggle=<F9>
+
 nnoremap <F11> :call ToggleBookView()<CR>
 let $book_view = 0
 function! ToggleBookView()
