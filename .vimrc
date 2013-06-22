@@ -1,3 +1,5 @@
+let mapleader=","
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
@@ -20,6 +22,8 @@ colorscheme solarized
 
 set mouse=a
 set backspace=indent,eol,start
+
+set showcmd
 
 set showtabline=2
 set splitright
