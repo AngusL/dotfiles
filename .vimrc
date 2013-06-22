@@ -6,6 +6,9 @@ execute pathogen#infect()
 set viewdir=~/.vim.d/view
 let g:netrw_home=expand("$HOME/.vim.d")
 
+highlight link EasyMotionShade  Comment
+let g:EasyMotion_leader_key='<Leader>'
+
 set tabstop=8
 set shiftwidth=4
 set softtabstop=4
