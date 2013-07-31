@@ -75,23 +75,4 @@ endfunction
 
 set pastetoggle=<F9>
 
-nnoremap <F11> :call ToggleBookView()<CR>
-let $book_view = 0
-function! ToggleBookView()
-    if $book_view == 0
-	let top = line("w$")
-	vsplit
-
-	execute ":" . top
-	normal zt
-
-	windo setlocal scrollbind
-	let $book_view = 1
-    else
-	q
-	setlocal noscrollbind
-	let $book_view = 0
-    end
-endfunction
-
 set ttymouse=xterm2
