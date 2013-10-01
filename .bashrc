@@ -36,6 +36,7 @@ alias ll='ls --color=auto -ltrh'
 alias la='ls --color=auto -a'
 alias ssh='ssh -X'
 alias tclsh='rlwrap tclsh'
+alias make_tags='ctags --tag-relative=yes -R -f .tags'
 
 # Progress-reporting copy command
 function copy() {
