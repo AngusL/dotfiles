@@ -1,0 +1,2 @@
+--langmap=Tcl:.tcl.tk.wish.itcl.exp.
+--c-kinds=+p
