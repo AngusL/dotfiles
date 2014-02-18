@@ -21,11 +21,6 @@ export EDITOR=vim
 # Colours
 eval `dircolors ~/.dir_colors`
 
-# Forward X11 if we can, but aren't
-if [ -z $DISPLAY ]; then
-    export DISPLAY=`remote_x_servers | tail -n 1`
-fi
-
 # git tab-completion
 . git-completion.bash
 
