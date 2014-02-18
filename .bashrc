@@ -21,9 +21,6 @@ export EDITOR=vim
 # Colours
 eval `dircolors ~/.dir_colors`
 
-# git tab-completion
-. git-completion.bash
-
 # Personal aliases
 alias vim='vim -Xp'
 alias ls='ls --color=auto'
