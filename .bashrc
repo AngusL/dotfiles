@@ -1,5 +1,11 @@
 PROMPT_COMMAND='if [ ${#PWD} -gt 25 ]; then SHORT_PWD=${PWD:0:11}...${PWD:${#PWD}-11}; else SHORT_PWD=$PWD; fi'
-export PS1='\H:$SHORT_PWD> '
+PS1='\D{%Y-%m-%d %H:%M} \H:$SHORT_PWD\n'
+
+if [[ $EUID -eq 0 ]]; then
+    export PS1="$PS1# "
+else
+    export PS1="$PS1$ "
+fi
 
 # Don't store or recall duplicate or short/unhelpful commands in history
 HISTCONTROL="ignoredups:erasedups"
