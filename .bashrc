@@ -7,7 +7,7 @@ HISTIGNORE="?:??:???:exit:clear:history:git diff:git branch"
 
 # Aggregate & propagate command history across all shells
 shopt -s histappend
-PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # Personal applications
 export PATH="$HOME/bin/script:$HOME/bin:$PATH:$HOME/.cabal/bin"
