@@ -47,5 +47,9 @@ function copy() {
         rm -i $TARGET
     fi
 
-    pv $1 > $TARGET
+    if [ -e $1 ]; then
+	pv $1 > $TARGET
+    else
+	echo "'$1' doesn't exist." >&2
+    fi
 }
