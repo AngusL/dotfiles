@@ -16,7 +16,7 @@ shopt -s histappend
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # Personal applications
-export PATH="$HOME/bin/script:$HOME/bin:$PATH:$HOME/.cabal/bin"
+export PATH="$HOME/bin/script:$HOME/bin:$HOME/.cabal/bin:$PATH"
 export MANPATH="$HOME/share/man:$HOME/man:$MANPATH"
 export PKG_CONFIG_PATH="$HOME/lib/pkgconfig:$PKG_CONFIG_PATH"
 export INCLUDE="$HOME/include:$INCLUDE"
