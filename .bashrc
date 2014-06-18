@@ -48,11 +48,19 @@ function copy() {
     fi
 
     if [ -e $TARGET ]; then
-        rm -i $TARGET
+	read -p "'$TARGET' exists. Delete? " -r
+	if [[ $REPLY =~ ^y(es)?$ ]]; then
+	    rm -f $TARGET
+	else
+	    echo "Doing nothing."
+	    return
+	fi
     fi
 
     if [ -e $1 ]; then
-	pv $1 > $TARGET
+	touch $TARGET
+	chmod --reference=$1 $TARGET
+	pv $1 >> $TARGET
     else
 	echo "'$1' doesn't exist." >&2
     fi
