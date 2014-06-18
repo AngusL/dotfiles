@@ -11,6 +11,10 @@ fi
 HISTCONTROL="ignoredups:erasedups"
 HISTIGNORE="?:??:???:exit:clear:history:git diff:git branch"
 
+# Longer history more useful for searches
+HISTSIZE=4096
+HISTFILESIZE=$HISTSIZE
+
 # Aggregate & propagate command history across all shells
 shopt -s histappend
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
