@@ -19,6 +19,9 @@ HISTFILESIZE=$HISTSIZE
 shopt -s histappend
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
+# Don't use terminal flow control
+stty -ixon
+
 # Personal applications
 export PATH="$HOME/bin/script:$HOME/bin:$HOME/.cabal/bin:$PATH"
 export MANPATH="$HOME/share/man:$HOME/man:$MANPATH"
