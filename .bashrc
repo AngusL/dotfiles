@@ -45,6 +45,11 @@ alias make_tags='ctags --tag-relative=yes -R -f .tags'
 
 # Progress-reporting copy command
 function copy() {
+    if [ $# -ne 2 ]; then
+	echo "Both source and destination paths required." >&2
+	return
+    fi
+
     TARGET=$2
     if [ -d $TARGET ]; then
         TARGET="$2/`basename $1`"
