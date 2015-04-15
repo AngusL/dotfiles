@@ -10,6 +10,9 @@ vbell off                   # Visual bell is annoying
 
 defscrollback 5000          # Keep better history
 
+# Want FQDN, not just hostname (as per %H)
+backtick 0 0 0 hostname --fqdn
+
 # Look and feel
 caption    always         "%t [%n]"
-hardstatus alwayslastline "%-33=%l %{+ .G}::%{-} %-15=%c %D %d/%m"
+hardstatus alwayslastline "%`%-33=%l %{+ .G}::%{-} %-15=%c %D %d/%m"
