@@ -28,6 +28,7 @@ export MANPATH="$HOME/share/man:$HOME/man:$MANPATH"
 export PKG_CONFIG_PATH="$HOME/lib/pkgconfig:$PKG_CONFIG_PATH"
 export INCLUDE="$HOME/include:$INCLUDE"
 export LD_LIBRARY_PATH="$HOME/lib:$LD_LIBRARY_PATH"
+export ACLOCAL_PATH="$HOME/share/aclocal:$ACLOCAL_PATH"
 
 export EDITOR=vim
 
