@@ -23,14 +23,14 @@ export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_C
 stty -ixon
 
 # Personal applications
-export PATH="$HOME/bin/script:$HOME/bin:$HOME/.cabal/bin:$PATH"
-export MANPATH="$HOME/share/man:$HOME/man:$MANPATH"
-export PKG_CONFIG_PATH="$HOME/lib/pkgconfig:$PKG_CONFIG_PATH"
-export CPATH="$HOME/include:$CPATH"
-export LD_LIBRARY_PATH="$HOME/lib:$LD_LIBRARY_PATH"
-export LIBRARY_PATH="$HOME/lib:$LIBRARY_PATH"
-export ACLOCAL_PATH="$HOME/share/aclocal:$ACLOCAL_PATH"
-export PYTHONPATH="$HOME/lib/python2.7/dist-packages:$PYTHONPATH"
+export PATH="$HOME/bin/script:$HOME/bin:$HOME/.cabal/bin"${PATH:+":$PATH"}
+export MANPATH="$HOME/share/man:$HOME/man"${MANPATH:+":$MANPATH"}
+export PKG_CONFIG_PATH="$HOME/lib/pkgconfig"${PKG_CONFIG_PATH:+":$PKG_CONFIG_PATH"}
+export CPATH="$HOME/include"${CPATH:+":$CPATH"}
+export LD_LIBRARY_PATH="$HOME/lib"${LD_LIBRARY_PATH:+":$LD_LIBRARY_PATH"}
+export LIBRARY_PATH="$HOME/lib"${LIBRARY_PATH:+":$LIBRARY_PATH"}
+export ACLOCAL_PATH="$HOME/share/aclocal"${ACLOCAL_PATH:+":$ACLOCAL_PATH"}
+export PYTHONPATH="$HOME/lib/python2.7/dist-packages"${PYTHONPATH:+":$PYTHONPATH"}
 
 export EDITOR=vim
 
