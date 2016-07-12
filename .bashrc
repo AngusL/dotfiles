@@ -25,7 +25,7 @@ stty -ixon
 # Personal applications
 export PATH="$HOME/bin/script:$HOME/bin:$HOME/.cabal/bin"${PATH:+":$PATH"}
 export MANPATH="$HOME/share/man:$HOME/man"${MANPATH:+":$MANPATH"}
-export PKG_CONFIG_PATH="$HOME/lib/pkgconfig"${PKG_CONFIG_PATH:+":$PKG_CONFIG_PATH"}
+export PKG_CONFIG_PATH="$HOME/lib/pkgconfig:$HOME/share/pkgconfig"${PKG_CONFIG_PATH:+":$PKG_CONFIG_PATH"}
 export CPATH="$HOME/include"${CPATH:+":$CPATH"}
 export LD_LIBRARY_PATH="$HOME/lib"${LD_LIBRARY_PATH:+":$LD_LIBRARY_PATH"}
 export LIBRARY_PATH="$HOME/lib"${LIBRARY_PATH:+":$LIBRARY_PATH"}
