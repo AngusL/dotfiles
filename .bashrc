@@ -22,6 +22,9 @@ export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_C
 # Don't use terminal flow control
 stty -ixon
 
+# Don't use Ctrl+D to exit the shell
+set -o ignoreeof
+
 # Personal applications
 export PATH="$HOME/bin/script:$HOME/bin:$HOME/.cabal/bin"${PATH:+":$PATH"}
 export MANPATH="$HOME/share/man:$HOME/man:$MANPATH"
