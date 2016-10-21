@@ -79,3 +79,5 @@ endfunction
 set pastetoggle=<F9>
 
 set ttymouse=xterm2
+
+autocmd VimEnter * set autochdir
