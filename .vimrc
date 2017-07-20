@@ -22,6 +22,9 @@ set colorcolumn=81
 set nowrap
 set ruler
 
+filetype plugin on
+filetype plugin indent on
+
 syntax on
 set background=dark
 colorscheme solarized
@@ -42,9 +45,6 @@ au! BufWinEnter ?* silent loadview
 
 set autochdir
 set tags+=.tags;
-
-filetype plugin on
-filetype plugin indent on
 
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
