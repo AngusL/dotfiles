@@ -20,7 +20,7 @@ shopt -s histappend
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # Don't use terminal flow control
-stty -ixon
+[[ $- == *i* ]] && stty -ixon
 
 # Don't use Ctrl+D to exit the shell
 set -o ignoreeof
