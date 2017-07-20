@@ -33,7 +33,7 @@ export CPATH="$HOME/include"${CPATH:+":$CPATH"}
 export LD_LIBRARY_PATH="$HOME/lib"${LD_LIBRARY_PATH:+":$LD_LIBRARY_PATH"}
 export LIBRARY_PATH="$HOME/lib"${LIBRARY_PATH:+":$LIBRARY_PATH"}
 export ACLOCAL_PATH="$HOME/share/aclocal"${ACLOCAL_PATH:+":$ACLOCAL_PATH"}
-export PYTHONPATH="$HOME/lib/python2.7/dist-packages"${PYTHONPATH:+":$PYTHONPATH"}
+export PYTHONPATH="$HOME/lib/python2.7/dist-packages:$HOME/lib/python2.7/site-packages"${PYTHONPATH:+":$PYTHONPATH"}
 
 export EDITOR=vim
 
