@@ -37,9 +37,6 @@ export PYTHONPATH="$HOME/lib/python2.7/dist-packages:$HOME/lib/python2.7/site-pa
 
 export EDITOR=vim
 
-# Colours
-eval `dircolors ~/.dir_colors`
-
 # Personal aliases
 alias vim='vim -Xp'
 alias ls='ls --color=auto'
