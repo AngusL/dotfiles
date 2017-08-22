@@ -25,6 +25,9 @@ set ruler
 filetype plugin on
 filetype plugin indent on
 
+set cinkeys-=0#
+set cinoptions+=#1s
+
 syntax on
 set background=dark
 colorscheme solarized
