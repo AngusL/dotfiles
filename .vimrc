@@ -29,7 +29,7 @@ set cinkeys-=0#
 set cinoptions+=#1s
 
 syntax on
-set background=dark
+set background=light
 colorscheme solarized
 
 set mouse=a
