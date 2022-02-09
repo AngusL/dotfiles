@@ -9,6 +9,12 @@ let g:netrw_home=expand("$HOME/.vim.d")
 highlight link EasyMotionShade  Comment
 let g:EasyMotion_leader_key='<Leader>'
 
+" EasyMotion cross-window motions are bidirectional.
+map  <Leader>F <Plug>(easymotion-bd-f)
+nmap <Leader>F <Plug>(easymotion-overwin-f)
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
 set tabstop=8
 set shiftwidth=2
 set softtabstop=2
